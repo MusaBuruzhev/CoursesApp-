@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__container container">
+                <p class="header__subtitle">Enjoy your studying!</p>
+                <h1 class="header__title">Our online courses</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="filters">
+                    <div class="filters__left">
+                        <ul class="filters__list" id="filtersList">
+                        
+                        </ul>
+                    </div>
+                    
+                    <div class="filters__right">
+                        <div class="search">
+                            <div class="search__wrapper">
+                                <svg class="search__icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="#999" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                </svg>
+                                <input type="text" class="search__input" id="searchInput" placeholder="Search courses...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards" id="cardsContainer">
+               
+                </div>
+
+               <div class="load-more-container" id="loadMoreContainer">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        <img class="load-more-btn__icon" src="./Convert.svg" alt="">
+                        <span class="load-more-btn__text">Load more</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data/courses.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
